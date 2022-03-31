@@ -1,0 +1,56 @@
+{
+    "model": {
+	// "encoder": "transformer",
+	// "decoder": "transformer",
+	"params": {
+	    "hidden_model": 512,
+//		 "d_model": 256,
+
+	    "nhead": 4,
+	    "num_encoder_layer": 6,
+	    "num_decoder_layer": 6,
+	    "dim_feedforward": 1024,
+	    "dropout": 0.4}
+    },
+	"text_embed_dim": 300,
+	"user_embed_dim": 200,
+	"bus_embed_dim" :200,
+	"label_embed_dim":100,
+    "pos_embed_dim":300,
+    "aspect_type_dim":300,
+    "training": {
+	"loss_func": "cross_entropy",
+	"optimizer": {
+	    "cls": "SGD",
+	    "params": {"lr": 0.1,
+		       "momentum": 0.9,
+		       "nesterov": true}},
+	"scheduler": {
+	    "cls": "StepLR",
+	    "params": {"step_size": 1,
+		       "gamma": 0.1}},
+	"batch_size": 2,
+	"num_epoch": 10,
+	"clipping": 10,
+	"gen_maxlen": 50},
+    // tolerance
+    "metrics": ["bleu1",
+		"bleu2",
+		"bleu3",
+		"bleu4",
+		"rouge_1",
+		"rouge_2",
+		"rouge_l"
+	],
+	"vocab":{
+		"max_size":40000
+	}
+
+
+}
+    
+
+    
+    
+
+ 

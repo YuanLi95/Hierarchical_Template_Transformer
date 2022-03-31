@@ -1,0 +1,21 @@
+{
+	"p_name": "yelp-default/example/old/", // preparation configuration name
+	"source_file": "data/example/datasets_exapmle.jsonl", // source file path
+
+//	"p_name": "yelp-default/", // preparation configuration name
+//	"source_file": "data/datasets.jsonl", // source file path
+//	"source_file": "example/yelp.jsonl", // source file path
+	"passage_method" : "concat" , // sentence or concat
+	"s_min": 1, // minimum number of sentences
+	"s_max": 20, // maximum number of sentences
+	"e_min": 2, // minimum number of extractions
+	"e_max": 100, // maximum number of extractions
+	"t_max": 70, // maximum number of tokens per review
+	"filter_empty": "False", // prune sentences with no extractions?
+	"do_stemming": "False", // stemming tokens?
+	"num_shuffle": 0, // number of additional input sequences generated from shuffling extraction orders
+	"split": [0.7, 0.2, 0.1], // train/dev/test split ratio over entities
+	"unk_ratio": -1, // ratio of out of domain vocab in the test set, -1 means random split.
+	"word_as_vocab": "False", // vocab as work/token OR extraction span
+	"BertTokenizer":"False"
+}
