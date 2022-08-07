@@ -12,5 +12,5 @@ Regarding the description of the about_Snippext , we have made certain modificat
 
 3. The purpose of the prepare.py file is to convert datasets.jsonl into the final dataset (train, dev, test)
 
-If you have any question，you can contact me at ynuyuanli@gmail.com
+If you have any question，you can contact me at ynuyuanli@gmail.com or wechat:a374702739
 
