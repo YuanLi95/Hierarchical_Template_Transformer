@@ -2,7 +2,7 @@
 
 This is code for Hierarchical template transformer for fine-grained sentiment controllable generation [this](https://www.sciencedirect.com/science/article/abs/pii/S0306457322001546)
 
-The datasets (FSCG-80) can be found [this](https://drive.google.com/drive/folders/1lXZLdfkb8hskR5nI9Tqu1uhXC8N1JvbU) and the snippext [this](https://github.com/rit-git/Snippext_public)
+The datasets (FSCG-80) can be found [this](https://drive.google.com/drive/folders/1lXZLdfkb8hskR5nI9Tqu1uhXC8N1JvbU) and the [snippext](https://github.com/rit-git/Snippext_public)
 
 Regarding the description of the about_Snippext , we have made certain modifications and additions to Snippext:
 
